@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+	<title>Cadastro seu currículo</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta name="viewport" content="device-width">
+	<script type="text/javascript" src="js/javascript.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="content">
+			<form name="form1" autocomplete="off" action="salvarDados" method="post" id="formulario">
+				<h1>Cadastre seu currículo</h1>
+				<h2 class="titulo">1. Dados Pessoais </h2>	
+
+				<div class="dtable">
+					<div class="esq-table">&nbsp;Nome </div>
+					<div class="dir-table">
+						<input type="text" name="nome" placeholder="Digite seu nome" class="tamanho" required id="nome" minlength="3"/>		
+					</div>
+				</div>
+
+				<div class="dtable">
+					<div class="esq-table">&nbsp;Data de nascimento </div>
+					<div class="dir-table">	
+						<input type="date" name="data" placeholder="Digite seu nome" class="tamanho" />
+					 </div>
+				</div>
+
+				<div class="dtable">
+					<div class="esq-table">&nbsp;Estado Civil </div>
+					<div class="dir-table">
+						<select name="civil" class="tamanho" id="civil"/>
+							<option selected value="erro">Selecione o estado civil</option>
+							<option value="s">solteiro(a)</option>
+							<option value="c">casado(a)</option>
+							<option value="v">viúvo(a)</option>
+							<option value="d">divorciado</option>
+						</select>
+						<div id="error"></div>
+					</div>
+				</div>
+
+				<div class="dtable">
+					<div class="esq-table">&nbsp;Sexo </div>
+					<div class="dir-table">
+						<input type="radio" name="sexo" value="male" />Masculino
+						<input type="radio" name="sexo" value="female" />Feminino					
+					</div>
+				</div>
+
+				
+				<h2 class="titulo">2. Objetivo</h2>
+
+				<div class="dtable">
+					<div class="esq-table-desc">&nbsp;Objetivo </div>
+					<div class="dir-table-desc">
+						<textarea name="objetivo" cols="50" rows="2" required placeholder="Digite seu objetivo" id="objetivo"></textarea>					
+					</div>
+				</div>
+
+				
+				<h2 class="titulo">3. Contato</h2>
+
+				<div class="dtable">
+					<div class="esq-table">&nbsp;Endereço </div>
+					<div class="dir-table">
+						<input type="text" name="endereco" placeholder="Digite seu endereço" class="tamanho" required />		
+					</div>
+				</div>
+
+				<div class="dtable">
+					<div class="esq-table">&nbsp;Cidade/Estado </div>
+					<div class="dir-table">
+						<input type="text" name="cidade" placeholder="Digite seu cidade" class="tamanho2" required />
+						&nbsp;/&nbsp; 
+						<input type="text" name="estado" placeholder="Digite seu estado" class="tamanho2" required maxlength="2" />		
+					</div>
+				</div>
+
+				<div class="dtable">
+					<div class="esq-table">&nbsp;CEP </div>
+					<div class="dir-table">
+						<input type="text" name="cep" placeholder="Digite seu cep no formato 99999-999" class="tamanho" required pattern="[0-9]{5}[\-][0-9]{3}" />		
+					</div>
+				</div>
+
+				<div class="dtable">
+					<div class="esq-table">&nbsp;Telefone </div>
+					<div class="dir-table">
+						<input min="1" type="text" name="telefone" placeholder="Digite seu telefone no formato (99) 9999-9999" class="tamanho" pattern="[\(][0-9]{2}[\)][\s][0-9]{4}[\-][0-9]{4}" id="telefone" />		
+					</div>
+				</div>
+
+				<div class="dtable">
+					<div class="esq-table">&nbsp;Email </div>
+					<div class="dir-table">
+						<input min="1" onchange="erro_email()" type="email" name="email" placeholder="Digite seu e-mail" class="tamanho" id="email"/>		
+					</div>
+				</div>
+
+				<div class="dtable">
+					<div class="esq-table-links">&nbsp;Rede Social </div>
+					<div class="dir-table-links">
+						<div class="links">
+							<img src="imagens/face.png"> http://facebook.com/ 
+							<input type="text" name="face" placeholder="Perfil facebook" class="tamanho2"/>
+						</div>
+
+						<div class="links">
+							<img src="imagens/linkedin.png"> http://linkedin.com/
+							<input type="text" name="linkedin" placeholder="Perfil linkedin" class="tamanho2"/>
+						</div>
+
+						<div class="links">		
+							<img src="imagens/skype.png"> 
+							<input type="text" name="skype" placeholder="Perfil skype" class="tamanho2"/>		
+						</div>
+
+					</div>
+				</div>
+
+				
+				<h2 class="titulo">4. Conhecimentos</h2>
+
+				<div class="dtable">
+					<div class="esq-table-prog">&nbsp;Linguagens de Programação </div>
+					<div class="dir-table-prog">
+						<div class="links">
+							<input type="checkbox" name="conhecimento" value="c" id="check"/>C/C++<br>
+						</div>
+
+						<div class="links">
+							<input type="checkbox" name="conhecimento" value="java" id="check"/>Java<br>
+						</div>
+
+						<div class="links">
+							<input type="checkbox" name="conhecimento" value="visual" id="check"/>Visual Basic<br>
+						</div>
+
+						<div class="links">
+							<input type="checkbox" name="conhecimento" value="net" id="check"/>.Net<br>
+						</div>
+
+						<div class="links">
+							<input type="checkbox" name="conhecimento" value="php" id="check"/>PHP<br>
+						</div>
+
+						<div class="links">
+							<input type="checkbox" name="conhecimento" value="python" id="check"/>Python<br>
+						</div>
+
+						<div class="links">
+							<input type="checkbox" name="conhecimento" value="html" id="check"/>HTML<br>
+						</div>					
+					</div>
+				</div>
+
+				
+				<div class="dtable">
+					<div class="esq-table">&nbsp;Idiomas </div>
+					<div class="dir-table">
+						Inglês&nbsp; 
+						<select name="ingles" class="tamanho2" id="ingles"/>
+							<option selected value="erro">nível</option>
+							<option value="m">básico</option>
+							<option value="f">intermediário</option>
+							<option value="o">avançado</option>
+						</select>
+
+						&nbsp;Espanhol&nbsp;
+						<select name="espanhol" class="tamanho2" id="espanhol"/>
+							<option selected value="erro">nível</option>
+							<option value="m">básico</option>
+							<option value="f">intermediário</option>
+							<option value="o">avançado</option>
+						</select>			
+					</div>
+				</div>
+
+				<div class="botao">
+					<input class="botao2" onClick="limpar()" type ="button" value ="Limpar"/>
+					<input class="botao2" onClick="enviar()" type="button" value ="Enviar"/>
+				</div>		
+			</form>	
+		</div>
+	</div>
+</body>

@@ -1,0 +1,56 @@
+h1.menu{
+	background: -webkit-linear-gradient(red, coral , red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
+	font-size: 100px;
+}
+
+h2.subtitulo{
+	background: -webkit-linear-gradient(red, coral , red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: left
+}
+
+a:link {color:red;}
+a:visited{color:red;}
+a:hover{color:#4169E1; font-size: 17px}
+a:active{color:salmon;}
+
+td.importante{
+	color: white;
+	font-weight: bold;
+	background: -webkit-linear-gradient(red, coral , red);
+}
+
+td.pag1{
+	color: blue;
+	font-weight: bold;
+	background: cornflowerblue;
+	min-width: 200px;
+}
+
+img.centralizado{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+table.centralizado{
+	width:100%;
+	line-height: 140%;
+	text-align: center;
+}
+
+span{
+	font-weight: bold;
+}
+
+div.link{
+	text-align: center;
+}
+
+div.imagensp1{
+	text-align: center;
+}

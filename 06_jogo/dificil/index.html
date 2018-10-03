@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jogo do Pokemon</title>
+		<script type="text/javascript" src="../js/dificil.js" defer></script>
+		<link rel="stylesheet" type="text/css" href="../css/arquivo.css">
+		<meta name="viewport" content="device-width">
+		<meta charset="utf-8">
+	</head>
+<body>
+	<div class = "container">
+		<div class="content">
+			<div class="centralizar">
+				<div id="pontos">Pontos = 0 </div>
+				<div id="vidas"><img id="vida1" class = "fotoVida" src ="../img/vida.png" /> <img id="vida2"src ="../img/vida.png" class = "fotoVida" /> <img id="vida3" src ="../img/vida.png" class = "fotoVida" /> </div>
+			</div>
+
+			<div><img id="foto" src="../foto/pokemon.png"></div>
+			<div id="displayText"></div>
+
+			<div class="centralizar">
+				<button onClick="iniciarJogo()" class="myButton" id="button0">Jogar</button>
+			</div>
+
+			<div class="centralizar">
+				<div>
+						<input type ="text" id ="textfield" class "textFieldDificil" name ="nomePokemon" style="visibility: hidden;"/>
+						<input class="myButton" id="button1" type="button" value="" onClick="opcao()" style="visibility: hidden;" />
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

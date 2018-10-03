@@ -1,0 +1,81 @@
+.container{
+	margin: 0 auto;
+	width: 67.5%;
+	max-width: 850;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background: YellowGreen;
+}
+
+.content{
+	margin-top: 10px;
+	width: 98%;
+	position: absolute;
+
+}
+
+.content-inner{
+	margin-top: 10px;
+	width: 100%;
+	position: relative;
+	float:left;
+}
+
+.content-fotos{
+	position: relative;
+	float:left;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.nome{
+	font-size: 2.5em;
+	width: 80%;
+	position: relative;
+	float:left;
+	/*background: orange;*/
+	padding-right: 20px;
+}
+
+.link{
+	padding-right: 20px;
+	text-decoration: underline;
+	font-size: 1.5em;
+	margin-top: 15px;
+	position: relative;
+	float: left;
+}
+
+.dados{
+	/*background: Gray;*/
+	position: relative;
+	overflow: hidden;
+}
+
+.CLEAR{
+	clear:both;
+}
+
+img.i_fotos{
+	max-width: 100%;
+	max-height: 200px;
+}
+
+span.titulo{
+	font-size: 1.6em;
+	font-weight: bold;
+	
+}
+
+span.dados{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+span{
+	text-overflow: ellipsis;
+}

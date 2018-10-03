@@ -1,0 +1,80 @@
+body { overflow-x: hidden; }
+
+.container{
+	margin: 0 auto;
+	width: 67.5%;
+	max-width: 850;
+
+}
+
+.content-main{
+	float: left;
+	width: 100%;
+}
+
+.content{
+	margin: 2%;
+}
+
+div.top{
+	background: lightblue;
+}
+
+div.img{
+	position: relative;
+	top:-470px;
+	left: 20px;
+	width:90%;
+}
+
+div.bottom{
+	background: #ffd9b3;
+	height: 400px;
+}
+
+
+img.perfil{
+	border: 4px solid white;
+	border-radius: 8px;
+}
+
+span.nome{
+	font-family: Arial;
+	font-size: 25px;
+	color: red;
+	font-weight: bold;
+}
+
+div.texto{
+	position: relative;
+	top: -450px;
+	background: #ffd9b3;
+	font-family: "Times New Roman",Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+}
+
+span.nome_i{
+	font-style: italic;
+}
+span.nome_n{
+	font-weight: bold;
+}
+span.nome_o{
+	text-decoration: underline;
+}
+span.nome_r{
+	text-decoration: line-through;
+}
+
+p.centro{
+	text-align: center;
+}
+
+p.direita{
+	text-align: right;
+}
+
+a:link {color:red;}
+a:visited{color:red;}
+a:hover{color:#4169E1; font-size: 17px}
+a:active{color:salmon;}
